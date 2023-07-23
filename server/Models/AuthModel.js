@@ -13,17 +13,16 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-userSchema.pre("save", async function (next) {
-  const salt = await bcrypt.genSalt();
-  this.password = bcrypt.hash(this.password, salt);
-  next();
-});
 
 userSchema.statics.login = async function (email, password) {
   const user = await this.findOne({ email });
   if (user) {
-    console.log(email);
-    const auth = await bcrypt.compare(password, user.password);
+    var auth =1 ;
+    if (password = user.password){
+      auth = 1;
+    }
+    else auth = 0;
+
     if (auth) {
       return user;
     }

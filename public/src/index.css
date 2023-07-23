@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(236, 236, 238);
-    overflow: hidden;
+    overflow: auto;
     font-family:sans-serif;
 }
 
@@ -60,7 +60,7 @@ span a {
 }
 
 .private {
-    height: 50vh;
+    padding: 50px;
     width: 70vw;
     background-color: orange;
     color: white;
