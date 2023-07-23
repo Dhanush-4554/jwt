@@ -52,7 +52,6 @@ module.exports.register = async (req, res, next) => {
 
     res.status(201).json({ user: user._id, created: true });
   } catch (err) {
-    console.log('i am iron man');
     console.log(err);
     const errors = handleErrors(err);
     res.json({ errors, created: false });
