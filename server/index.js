@@ -9,7 +9,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://deploy-mern-1whq.vercel.app"],
+    origin: ["http://localhost:3000"],
     methods:['GET','POST'],
     credentials: true,
   })
