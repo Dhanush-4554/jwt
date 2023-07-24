@@ -4,11 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "start": "node server.js",
-=======
-    "start": "node index.js",
->>>>>>> 1ea9f013c8dcdeb20be8707d14bda14860cb20aa
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
